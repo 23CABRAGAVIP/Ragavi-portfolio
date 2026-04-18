@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ragavi Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Ragavi</h2>
+  <ul>
+    <li><a onclick="showPage('home')">Home</a></li>
+    <li><a onclick="showPage('skills')">Skills</a></li>
+    <li><a onclick="showPage('projects')">Projects</a></li>
+    <li><a onclick="showPage('certificates')">Certificates</a></li>
+    <li><a onclick="showPage('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page active">
+
+  <div class="home-container">
+
+    <img src="assets/profile.jpg" class="profile">
+
+    <h1>Hi, I'm <span>Ragavi</span></h1>
+
+    <h3 class="role">Aspiring Software Developer</h3>
+
+    <p class="intro">
+      I am an aspiring software developer with a strong interest in building
+      user-friendly and efficient web applications.I have basic knowledge in Python, HTML, CSS, and JavaScript, and I enjoy
+      solving problems and learning new technologies.actively building real-world
+      projects to start my career in IT.
+    </p>
+
+    <a href="assets/Ragavi_Resume.pdf" download class="btn">
+      Download Resume
+    </a>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="page">
+  <h1>My Skills</h1>
+
+  <div class="grid">
+
+    <div class="card" onclick="openModal('Python', 'Basic programming and logic building')">
+      <h3>🐍 Python (Basic)</h3>
+    </div>
+
+    <div class="card" onclick="openModal('HTML', 'Structure of web pages')">
+      <h3>🌐 HTML</h3>
+    </div>
+
+    <div class="card" onclick="openModal('CSS', 'Styling and layouts')">
+      <h3>🎨 CSS</h3>
+    </div>
+
+    <div class="card" onclick="openModal('JavaScript', 'Basic interactivity and DOM')">
+      <h3>⚡ JavaScript (Basic)</h3>
+    </div>
+
+    <div class="card" onclick="openModal('Problem Solving', 'Breaking problems into solutions')">
+      <h3>🧠 Problem Solving</h3>
+    </div>
+
+    <div class="card" onclick="openModal('Quick Learning', 'Adapting to new technologies fast')">
+      <h3>🚀 Quick Learning</h3>
+    </div>
+
+    <div class="card" onclick="openModal('MS Excel', 'Basic data handling and sheets')">
+      <h3>📊 MS Excel</h3>
+    </div>
+
+    <div class="card" onclick="openModal('Blender', 'Basic 3D modeling')">
+      <h3>🎮 Blender (Basic)</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="skillModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects" class="page">
+  <h1>My Projects</h1>
+
+  <div class="grid">
+
+    <!-- PROJECT 1 -->
+    <div class="card">
+      <a href="https://69e209c92c7be31012bc4339--charming-salamander-27ed70.netlify.app/" target="_blank">
+        <img src="assets/project1.jpg" class="cert-img">
+      </a>
+      <h3>🛒 Online Shopping Website</h3>
+      <p>User-friendly shopping interface with product display.</p>
+      <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+      <a href="https://69e209c92c7be31012bc4339--charming-salamander-27ed70.netlify.app/" target="_blank" class="btn">
+        Live Project
+      </a>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card">
+      <a href="https://69e35257d08ec58419683443--charming-salamander-27ed70.netlify.app/" target="_blank">
+        <img src="assets/project2.jpg" class="cert-img">
+      </a>
+      <h3>🤖 AI Career Path Analyzer</h3>
+      <p>Suggests career paths based on user interests.</p>
+      <p><b>Tech:</b> Python</p>
+      <a href="https://69e35257d08ec58419683443--charming-salamander-27ed70.netlify.app/" class="btn">View Project</a>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="card">
+      <a href="https://69e209c92c7be31012bc4339--charming-salamander-27ed70.netlify.app/" target="_blank">
+        <img src="assets/project3.jpg" class="cert-img">
+      </a>
+      <h3>🌐 Personal Portfolio</h3>
+      <p>My personal portfolio with premium UI design.</p>
+      <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+      <a href="https://69e209c92c7be31012bc4339--charming-salamander-27ed70.netlify.app/" target="_blank" class="btn">
+        Live Project
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="page">
+  <h1>Certificates</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="assets/cert1.jpg" class="cert-img">
+      <p>Web Development - Simplilearn</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/cert2.jpg" class="cert-img">
+      <p>HTML Course - Simplilearn</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/cert3.jpg" class="cert-img">
+      <p>Python Basics - Coursera</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/cert4.jpg" class="cert-img">
+      <p>HR Conclave Participation</p>
+</div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+  <h1>Contact Me</h1>
+
+  <p class="contact-sub">
+    I’m open to internships and job opportunities.
+  </p>
+
+  <div class="grid">
+
+    <!-- EMAIL -->
+    <div class="card contact-card" onclick="window.location.href='mailto:ragavipalanisamy11@gmail.com'">
+      <h3>📧 Email</h3>
+      <p>ragavipalanisamy11@gmail.com</p>
+      <span class="click-text">Click to send mail</span>
+    </div>
+
+    <!-- LINKEDIN -->
+    <div class="card contact-card" onclick="window.open('https://www.linkedin.com/in/ragavipalanisamy')">
+      <h3>💼 LinkedIn</h3>
+      <p>Connect professionally</p>
+      <span class="click-text">View Profile</span>
+    </div>
+
+    <!-- GITHUB -->
+    <div class="card contact-card" onclick="window.open('https://github.com/23CABRAGAVIP')">
+      <h3>💻 GitHub</h3>
+      <p>My Projects & Code</p>
+      <span class="click-text">Visit GitHub</span>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
